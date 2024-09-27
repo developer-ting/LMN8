@@ -15,6 +15,7 @@ import MetaTags from "@/components/MetaTags";
 import styles from "@/styles/pages/Home.module.scss";
 
 // IMAGES //
+import titleImg from "../public/img/Layer_1.png";
 
 // DATA //
 
@@ -25,17 +26,17 @@ export default function HomePage() {
 			{/* Metatags */}
 			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
 
-			{/* Header */}
-			<Header />
-
 			{/* Page Content starts here */}
-			<main className={`${styles.HomePage} bg_primary`}>
-				<h2>This is ting base next.js template</h2>
+			<main className={`${styles.HomePage}`}>
+				<div className={`${styles.banner_section}`}>
+					<div className={`${styles.banner_info}`}>
+						<img src={titleImg.src} className="img-responsive"/>
+						<h2 className={`${styles.sub_heading}`}>Complete control of your data, at your fingertips</h2>
+						<h1 className={`${styles.heading}`}>Arriving Soon</h1>
+					</div>
+				</div>
 			</main>
 			{/* Page Content ends here */}
-
-			{/* Footer */}
-			<Footer />
 		</div>
 	);
 }
