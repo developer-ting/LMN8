@@ -24,7 +24,7 @@ export default function HomePage() {
 	return (
 		<div>
 			{/* Metatags */}
-			<MetaTags Title={"Home"} Desc={"Home Desc"} OgImg={""} Url={"/"} />
+			<MetaTags Title={"lmn8"} Desc={"lmn8"} OgImg={""} Url={"/"} />
 
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
